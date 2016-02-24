@@ -316,7 +316,7 @@ PolymerElement.prototype.attributeFollows = function(name, newNode, oldNode) {};
 /**
  * Convenience method to add an event listener on a given element, late bound to
  * a named method on this element.
- * @param {EventTarget} node Element to add event listener to.
+ * @param {?EventTarget=} node Element to add event listener to.
  * @param {string} eventName Name of event to listen for.
  * @param {string} methodName Name of handler method on this to call.
  */
@@ -324,7 +324,7 @@ PolymerElement.prototype.listen = function(node, eventName, methodName) {};
 
 /**
  * Convenience method to remove an event listener from a given element.
- * @param {EventTarget} node Element to remove event listener from.
+ * @param {!EventTarget} node Element to remove event listener from.
  * @param {string} eventName Name of event to stop listening for.
  * @param {string} methodName Name of handler method on this to remove.
  */
